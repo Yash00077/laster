@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="LASTER — The campus-only student marketplace. Post academic tasks, get them done by verified peers, and earn money on campus. Built by students, for students.">
+    <meta name="keywords" content="student marketplace, campus tasks, assignment help, student income, college, LASTER">
+    <meta name="author" content="LASTER">
+    <meta name="theme-color" content="#D4A017">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="LASTER — Campus Student Marketplace">
+    <meta property="og:description" content="Post tasks. Get them done. Earn money. All on your campus.">
+    <meta property="og:image" content="assets/images/logo.png">
+    <meta property="og:type" content="website">
+
+    <title>LASTER — Campus Student Marketplace</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css?v=5">
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+</head>
+
+<body id="top">
+    <!-- Lucide Icons CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+    <!-- ========== CURSOR GLOW ========== -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#top" class="nav-logo">
+                <img src="assets/images/logo.png" alt="LASTER Logo" class="logo-img">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#cta" class="btn btn-primary btn-sm">Join Waitlist</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-nav-links">
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <div class="mobile-nav-actions">
+                <a href="#cta" class="btn btn-primary">Join Waitlist</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-effects">
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+            <div class="hero-orb hero-orb-3"></div>
+            <div class="grid-overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="hero-badge animate-on-scroll">
+                    <span class="badge-dot"></span>
+                    <span>🚀 Coming Soon — Launching 2026</span>
+                </div>
+                <h1 class="hero-title animate-on-scroll">
+                    Your Campus.<br>
+                    <span class="gradient-text">Your Marketplace.</span>
+                </h1>
+                <p class="hero-subtitle animate-on-scroll">
+                    Post academic tasks — assignments, notes, PPTs, coding help — and let verified students from your
+                    own college complete them. Save time. Earn money. Stress less.
+                </p>
+                <div class="hero-cta animate-on-scroll">
+                    <a href="#cta" class="btn btn-primary btn-lg">
+                        <span>Join the Waitlist</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                    <a href="#how-it-works" class="btn btn-ghost btn-lg">
+                        <i data-lucide="play-circle"></i>
+                        <span>See How It Works</span>
+                    </a>
+                </div>
+                <div class="hero-trust animate-on-scroll">
+                    <div class="trust-avatars">
+                        <div class="trust-avatar" style="background: linear-gradient(135deg, #f59e0b, #d97706);">R</div>
+                        <div class="trust-avatar" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);">A</div>
+                        <div class="trust-avatar" style="background: linear-gradient(135deg, #ec4899, #db2777);">S</div>
+                        <div class="trust-avatar" style="background: linear-gradient(135deg, #10b981, #059669);">P</div>
+                        <div class="trust-avatar" style="background: linear-gradient(135deg, #3b82f6, #2563eb);">K</div>
+                    </div>
+                    <p class="trust-text">Be among the <strong>first students</strong> to join</p>
+                </div>
+            </div>
+            <div class="hero-visual animate-on-scroll">
+                <div class="hero-image-wrapper">
+                    <img src="assets/images/hero-illustration.png" alt="Students collaborating on campus"
+                        class="hero-image">
+                    <div class="floating-card floating-card-1">
+                        <div class="floating-card-icon" style="background: rgba(245,197,24,0.15); color: #F5C518;">
+                            <i data-lucide="file-text"></i>
+                        </div>
+                        <div>
+                            <p class="floating-card-title">Assignment Posted</p>
+                            <p class="floating-card-sub">15 pages · ₹100</p>
+                        </div>
+                    </div>
+                    <div class="floating-card floating-card-2">
+                        <div class="floating-card-icon" style="background: rgba(16,185,129,0.15); color: #10b981;">
+                            <i data-lucide="check-circle"></i>
+                        </div>
+                        <div>
+                            <p class="floating-card-title">Task Completed!</p>
+                            <p class="floating-card-sub">Earned ₹200 🎉</p>
+                        </div>
+                    </div>
+                    <div class="floating-card floating-card-3">
+                        <div class="floating-card-icon" style="background: rgba(139,92,246,0.15); color: #8b5cf6;">
+                            <i data-lucide="message-circle"></i>
+                        </div>
+                        <div>
+                            <p class="floating-card-title">New Message</p>
+                            <p class="floating-card-sub">"Can you do it by 5PM?"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- ========== COMING SOON BANNER ========== -->
+    <section class="coming-soon-banner" id="coming-soon">
+        <div class="container">
+            <div class="banner-content animate-on-scroll">
+                <div class="banner-icon-row">
+                    <div class="banner-icon-item">
+                        <i data-lucide="rocket"></i>
+                        <span>Launching Soon</span>
+                    </div>
+                    <div class="banner-divider"></div>
+                    <div class="banner-icon-item">
+                        <i data-lucide="map-pin"></i>
+                        <span>Campus-Only</span>
+                    </div>
+                    <div class="banner-divider"></div>
+                    <div class="banner-icon-item">
+                        <i data-lucide="sparkles"></i>
+                        <span>100% Free to Join</span>
+                    </div>
+                    <div class="banner-divider"></div>
+                    <div class="banner-icon-item">
+                        <i data-lucide="heart-handshake"></i>
+                        <span>Built for Students</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== HOW IT WORKS ========== -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Simple & Fast</span>
+                <h2 class="section-title">How LASTER Works</h2>
+                <p class="section-subtitle">Four easy steps to get your work done or start earning</p>
+            </div>
+            <div class="steps-timeline">
+                <div class="timeline-line"></div>
+                <div class="step-card animate-on-scroll">
+                    <div class="step-number">01</div>
+                    <div class="step-icon-wrapper">
+                        <div class="step-icon">
+                            <i data-lucide="upload"></i>
+                        </div>
+                    </div>
+                    <h3 class="step-title">Post a Task</h3>
+                    <p class="step-desc">Describe your assignment — handwritten, typed, PPT, coding, or notes. Set your
+                        budget and deadline.</p>
+                </div>
+                <div class="step-card animate-on-scroll">
+                    <div class="step-number">02</div>
+                    <div class="step-icon-wrapper">
+                        <div class="step-icon">
+                            <i data-lucide="user-check"></i>
+                        </div>
+                    </div>
+                    <h3 class="step-title">Get Matched</h3>
+                    <p class="step-desc">Verified students from your own college see and accept the task. Only
+                        campus-verified peers, no outsiders.</p>
+                </div>
+                <div class="step-card animate-on-scroll">
+                    <div class="step-number">03</div>
+                    <div class="step-icon-wrapper">
+                        <div class="step-icon">
+                            <i data-lucide="messages-square"></i>
+                        </div>
+                    </div>
+                    <h3 class="step-title">Chat & Coordinate</h3>
+                    <p class="step-desc">Use the built-in chat to discuss details, share files, and track progress in
+                        real time.</p>
+                </div>
+                <div class="step-card animate-on-scroll">
+                    <div class="step-number">04</div>
+                    <div class="step-icon-wrapper">
+                        <div class="step-icon">
+                            <i data-lucide="wallet"></i>
+                        </div>
+                    </div>
+                    <h3 class="step-title">Pay & Earn</h3>
+                    <p class="step-desc">Work gets delivered. The poster pays securely. The doer earns. Everyone wins!
+                        🎉</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CAMPUS FLOW ========== -->
+    <section class="campus-flow" id="campus-flow">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">// Simple Peer-to-Peer System Flow</span>
+                <h2 class="section-title">How LASTER Works<br><span class="gradient-text">On Your Campus</span></h2>
+                <p class="section-subtitle">Select your mode below to understand the step-by-step transaction path,
+                    from posting academic stress solutions to putting fast money in your pocket.</p>
+            </div>
+
+            <!-- Tab Toggles -->
+            <div class="flow-tabs animate-on-scroll" id="flowTabs">
+                <button class="flow-tab-btn active" id="flowTabNeed" data-panel="panelNeed">
+                    <i data-lucide="trending-up"></i>
+                    <span>I Need Homework Help</span>
+                </button>
+                <button class="flow-tab-btn" id="flowTabEarn" data-panel="panelEarn">
+                    <i data-lucide="shield-check"></i>
+                    <span>I Want to Earn Side Cash</span>
+                </button>
+            </div>
+
+            <!-- Panel: I Need Homework Help -->
+            <div class="flow-panel active" id="panelNeed">
+                <div class="flow-cards">
+                    <div class="flow-card animate-on-scroll">
+                        <div class="flow-card-header">
+                            <span class="flow-step-num">STEP 01</span>
+                            <div class="flow-card-icon">
+                                <i data-lucide="file-pen"></i>
+                            </div>
+                        </div>
+                        <h3 class="flow-card-title">Post Detailed Task Specifications</h3>
+                        <p class="flow-card-desc">Fill out a quick form describing your academic chore (e.g., "15-page
+                            Physics Lab manual copy"). Specify budget, pages, and delivery timing.</p>
+                        <div class="flow-card-tag">Takes 60 seconds</div>
+                    </div>
+                    <div class="flow-card animate-on-scroll">
+                        <div class="flow-card-header">
+                            <span class="flow-step-num">STEP 02</span>
+                            <div class="flow-card-icon">
+                                <i data-lucide="search"></i>
+                            </div>
+                        </div>
+                        <h3 class="flow-card-title">Get Matched Instantly with Classmates</h3>
+                        <p class="flow-card-desc">Qualified peer solvers from your verified college campus review
+                            specifications. Interested classmates bid or accept the terms instantly.</p>
+                        <div class="flow-card-tag">Avg match: 4.8 Mins</div>
+                    </div>
+                    <div class="flow-card animate-on-scroll">
+                        <div class="flow-card-header">
+                            <span class="flow-step-num">STEP 03</span>
+                            <div class="flow-card-icon">
+                                <i data-lucide="message-square"></i>
+                            </div>
+                        </div>
+                        <h3 class="flow-card-title">Coordinate Safely via In-App Chat</h3>
+                        <p class="flow-card-desc">Use our encrypted campus chat to discuss assignment instructions, send
+                            references, adjust guidelines, and get draft progress screenies.</p>
+                        <div class="flow-card-tag">Safe &amp; confidential</div>
+                    </div>
+                    <div class="flow-card animate-on-scroll">
+                        <div class="flow-card-header">
+                            <span class="flow-step-num">STEP 04</span>
+                            <div class="flow-card-icon">
+                                <i data-lucide="circle-check-big"></i>
+                            </div>
+                        </div>
+                        <h3 class="flow-card-title">Success Review &amp; Release Funds</h3>
+                        <p class="flow-card-desc">Work gets completed carefully. Preview files securely inside our app,
+                            make amendments, and release payments upon absolute satisfaction.</p>
+                        <div class="flow-card-tag">100% Satisfaction Guarded</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel: I Want to Earn Side Cash -->
+            <div class="flow-panel" id="panelEarn">
+                <div class="flow-cards">
+                    <div class="flow-card animate-on-scroll">
+                        <div class="flow-card-header">
+                            <span class="flow-step-num">STEP 01</span>
+                            <div class="flow-card-icon">
+                                <i data-lucide="shield"></i>
+                            </div>
+                        </div>
+                        <h3 class="flow-card-title">Secure College Verification Check</h3>
+                        <p class="flow-card-desc">Provide your college email address or upload campus ID. Only
+                            authorized active students join our vetted marketplace circle.</p>
+                        <div class="flow-card-tag">Vetted credentials</div>
+                    </div>
+                    <div class="flow-card animate-on-scroll">
+                        <div class="flow-card-header">
+                            <span class="flow-step-num">STEP 02</span>
+                            <div class="flow-card-icon">
+                                <i data-lucide="layout-list"></i>
+                            </div>
+                        </div>
+                        <h3 class="flow-card-title">Browse &amp; Reserve Active Task Gigs</h3>
+                        <p class="flow-card-desc">Scan live local listings on campus across subjects (Math, Coding, PPT
+                            Design, Notes). Reserve gigs that fit your knowledge base.</p>
+                        <div class="flow-card-tag">Lock gigs instantly</div>
+                    </div>
+                    <div class="flow-card animate-on-scroll">
+                        <div class="flow-card-header">
+                            <span class="flow-step-num">STEP 03</span>
+                            <div class="flow-card-icon">
+                                <i data-lucide="file-output"></i>
+                            </div>
+                        </div>
+                        <h3 class="flow-card-title">Work Diligently &amp; Exchange Drafts</h3>
+                        <p class="flow-card-desc">Coordinate with task poster classmates right in private chat. Follow
+                            guidelines precisely and submit previews for peer reviews.</p>
+                        <div class="flow-card-tag">Direct student relations</div>
+                    </div>
+                    <div class="flow-card animate-on-scroll">
+                        <div class="flow-card-header">
+                            <span class="flow-step-num">STEP 04</span>
+                            <div class="flow-card-icon">
+                                <i data-lucide="credit-card"></i>
+                            </div>
+                        </div>
+                        <h3 class="flow-card-title">Direct Transfers to Your Wallet</h3>
+                        <p class="flow-card-desc">Upon final classmate confirmation, funds are automatically credited to
+                            your in-app payment dashboard. Withdraw instantly as cash bank roll!</p>
+                        <div class="flow-card-tag">Quick payouts</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FEATURES ========== -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Planned Features</span>
+                <h2 class="section-title">Everything You'll Get<br><span class="gradient-text">On Campus</span></h2>
+                <p class="section-subtitle">LASTER will be packed with features designed specifically for the student
+                    experience</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card feature-card-large animate-on-scroll">
+                    <div class="feature-card-glow"></div>
+                    <div class="feature-icon-lg">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+                    <h3>Campus-Verified Only</h3>
+                    <p>Every user is verified with their college email & ID. Only students from your campus can see and
+                        accept your tasks. Total trust, zero risk.</p>
+                    <div class="feature-visual">
+                        <div class="verification-badge">
+                            <i data-lucide="badge-check"></i>
+                            <span>TJIT — Verified</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-card-glow"></div>
+                    <div class="feature-icon">
+                        <i data-lucide="file-stack"></i>
+                    </div>
+                    <h3>All Task Types</h3>
+                    <p>Handwritten assignments, typed docs, PPTs, coding help, projects, lab files — post any academic
+                        task.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-card-glow"></div>
+                    <div class="feature-icon">
+                        <i data-lucide="clock"></i>
+                    </div>
+                    <h3>Deadline Tracking</h3>
+                    <p>Set deadlines when posting. Both parties see live countdowns. Never miss a submission again.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-card-glow"></div>
+                    <div class="feature-icon">
+                        <i data-lucide="message-square-text"></i>
+                    </div>
+                    <h3>Built-in Chat</h3>
+                    <p>Real-time messaging with file sharing. Coordinate details, ask questions, send progress — all
+                        in-app.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-card-glow"></div>
+                    <div class="feature-icon">
+                        <i data-lucide="wallet-cards"></i>
+                    </div>
+                    <h3>Secure Payments</h3>
+                    <p>Payments held in escrow until both sides confirm. Your money is safe from start to finish.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-card-glow"></div>
+                    <div class="feature-icon">
+                        <i data-lucide="star"></i>
+                    </div>
+                    <h3>Ratings & Reviews</h3>
+                    <p>Rate and review after every task. Build your campus reputation and find the best task doers
+                        instantly.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-card-glow"></div>
+                    <div class="feature-icon">
+                        <i data-lucide="bell-ring"></i>
+                    </div>
+                    <h3>Smart Notifications</h3>
+                    <p>Get instant alerts when someone accepts your task, sends a message, or completes your work.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== APP SHOWCASE ========== -->
+    <section class="app-showcase" id="app-showcase">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Sneak Peek</span>
+                <h2 class="section-title">A Glimpse of<br><span class="gradient-text">What's Coming</span></h2>
+                <p class="section-subtitle">A sleek, intuitive interface designed for speed and simplicity</p>
+            </div>
+            <div class="showcase-grid animate-on-scroll">
+                <div class="showcase-card">
+                    <div class="showcase-card-header">
+                        <span class="showcase-label">Task Feed</span>
+                        <div class="showcase-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <img src="assets/images/app-mockup.png" alt="LASTER Task Feed" class="showcase-img" loading="lazy">
+                </div>
+                <div class="showcase-card">
+                    <div class="showcase-card-header">
+                        <span class="showcase-label">Chat & Coordinate</span>
+                        <div class="showcase-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <img src="assets/images/chat-mockup.png" alt="LASTER Chat Interface" class="showcase-img" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== THE PROBLEM ========== -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Why LASTER?</span>
+                <h2 class="section-title">The Problems We're<br><span class="gradient-text">Solving</span></h2>
+                <p class="section-subtitle">Every student faces these struggles — LASTER is being built to fix them</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="problem-emoji">📚</div>
+                    <h3 class="problem-title">Last-Minute Assignment Stress</h3>
+                    <p class="testimonial-text">"It's 11 PM, assignment is due tomorrow, and I haven't started. I wish I
+                        could just find someone to help me right now."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar" style="background: linear-gradient(135deg, #f59e0b, #d97706);">R
+                        </div>
+                        <div>
+                            <p class="testimonial-name">Every Student</p>
+                            <p class="testimonial-college">Every Campus, Ever</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card testimonial-featured animate-on-scroll">
+                    <div class="problem-emoji">💸</div>
+                    <h3 class="problem-title">No Easy Side Income</h3>
+                    <p class="testimonial-text">"I'm good at coding and writing PPTs, but there's no easy way to earn
+                        money on campus using my skills. Freelancing sites are too complex."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);">A
+                        </div>
+                        <div>
+                            <p class="testimonial-name">Skilled Students</p>
+                            <p class="testimonial-college">Colleges Everywhere</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="problem-emoji">⏰</div>
+                    <h3 class="problem-title">Too Many Deadlines</h3>
+                    <p class="testimonial-text">"5 subjects, 3 assignments due this week, plus a project presentation. I
+                        literally can't do everything myself. There has to be a better way."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar" style="background: linear-gradient(135deg, #ec4899, #db2777);">S
+                        </div>
+                        <div>
+                            <p class="testimonial-name">Overwhelmed Students</p>
+                            <p class="testimonial-college">Every Semester</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== COMMUNITY VOTE ========== -->
+    <section class="community-vote" id="community-vote">
+        <div class="container">
+            <div class="vote-card animate-on-scroll">
+                <div class="vote-bg-glow"></div>
+                <div class="vote-content">
+                    <h2 class="vote-title">Is this what you've been<br><span class="gradient-text">waiting for?</span></h2>
+                    <p class="vote-subtitle">We're building LASTER based on student demand. If you want this on your campus, let us know!</p>
+                    <div class="vote-actions">
+                        <button class="btn btn-primary btn-xl" id="voteBtn">
+                            <i data-lucide="heart"></i>
+                            <span>Yes, I want this!</span>
+                        </button>
+                        <div class="vote-counter">
+                            <span class="count-number" id="voteCount">...</span>
+                            <span class="count-text">students have said YES</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Got Questions?</span>
+                <h2 class="section-title">Frequently Asked<br><span class="gradient-text">Questions</span></h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item animate-on-scroll" id="faq-1">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+                        <span>Is LASTER free to use?</span>
+                        <i data-lucide="plus" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-1">
+                        <p>Yes! Signing up and posting tasks is completely free. LASTER only takes a small service fee
+                            when a transaction is completed successfully.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll" id="faq-2">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+                        <span>How is campus verification done?</span>
+                        <i data-lucide="plus" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-2">
+                        <p>Students verify using their official college email ID and student ID card. This ensures only
+                            real, enrolled students from your campus can participate.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll" id="faq-3">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+                        <span>What types of tasks can I post?</span>
+                        <i data-lucide="plus" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-3">
+                        <p>You can post any academic task: handwritten assignments, typed assignments, PowerPoint
+                            presentations, coding projects, lab files, notes preparation, and more.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll" id="faq-4">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+                        <span>Is my payment secure?</span>
+                        <i data-lucide="plus" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-4">
+                        <p>Absolutely. Payments are held securely in escrow. The doer receives payment only after the
+                            poster confirms that the task has been completed satisfactorily.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll" id="faq-5">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+                        <span>Can I earn money on LASTER?</span>
+                        <i data-lucide="plus" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-5">
+                        <p>Yes! If you're good at writing, coding, making PPTs, or any academic work — just browse
+                            available tasks and start accepting them. Many students earn ₹5,000-₹15,000/month.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll" id="faq-6">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
+                        <span>What if there's a dispute?</span>
+                        <i data-lucide="plus" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-6">
+                        <p>LASTER has a built-in dispute resolution system. If there's any issue, our campus moderators
+                            review the case and ensure a fair outcome for both parties.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section class="cta-section" id="cta">
+        <div class="cta-bg-effects">
+            <div class="cta-orb cta-orb-1"></div>
+            <div class="cta-orb cta-orb-2"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content animate-on-scroll">
+                <div class="coming-soon-badge">
+                    <i data-lucide="rocket"></i>
+                    <span>COMING SOON</span>
+                </div>
+                <h2 class="cta-title">Be the First on<br><span class="gradient-text">Your Campus</span></h2>
+                <p class="cta-subtitle">LASTER is launching soon. Join the waitlist to get early access and be the first
+                    to post or earn on your campus.</p>
+                <form class="waitlist-form" id="waitlistForm">
+                    <div class="waitlist-inputs-wrapper">
+                        <div class="waitlist-input-box">
+                            <i data-lucide="mail" class="icon-green"></i>
+                            <input type="email" placeholder="Student Email (@college.edu)" class="waitlist-input"
+                                id="waitlistEmail" required>
+                        </div>
+                        <div class="waitlist-input-box">
+                            <i data-lucide="graduation-cap" class="icon-orange"></i>
+                            <input type="text" placeholder="Your Campus Name" class="waitlist-input"
+                                id="waitlistCampus" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg waitlist-btn-full">
+                        <span>Join Waitlist</span>
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                    <p class="waitlist-success" id="waitlistSuccess">🎉 You're on the list! We'll notify you when LASTER
+                        launches on your campus.</p>
+                </form>
+                <div class="cta-note">
+                    <i data-lucide="lock"></i>
+                    <span>No spam · We'll only email you when we launch</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#top" class="footer-logo">
+                        <img src="assets/images/logo.png" alt="LASTER" class="footer-logo-img">
+                    </a>
+                    <p class="footer-tagline">Built by students, for students — to save time, reduce stress, and create
+                        opportunities on campus.</p>
+                    <div class="footer-socials">
+                        <a href="https://www.instagram.com/laster.in?igsh=Njl6NGczMTg5cWVw" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/laster-188058411/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="22.54 6.42 21.88 6.28 21.86 6.24 18.94 5.76 15.33 5.25 12 5 8.67 5.25 5.06 5.76 2.14 6.24 2.12 6.28 1.46 6.42 1 7.56 0.34 12 1 16.44 1.46 17.58 2.12 17.72 2.14 17.76 5.06 18.24 8.67 18.75 12 19 15.33 18.75 18.94 18.24 21.86 17.76 21.88 17.72 22.54 17.58 23 16.44 23.66 12 23 7.56 22.54 6.42"></polygon>
+                                <polygon points="10 9.5 10 15.5 15.5 12.5 10 9.5"></polygon>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Download App</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 LASTER. All rights reserved. Made with ❤️ for students.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js?v=4"></script>
+</body>
+
+</html>

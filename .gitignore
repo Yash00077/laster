@@ -1,0 +1,9 @@
+# Local waitlist data (emails) — do not publish
+waitlist.csv
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
